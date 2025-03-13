@@ -1,0 +1,19 @@
+{
+  "configFile" : "C:\\Users\\samb2\\IdeaProjects\\parser_config\\tester.txt",
+  "configurationID" : 2,
+  "configurationData" : {
+    "mode" : "FILES",
+    "path" : [ "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(1).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(2).txt" ]
+  },
+  "out" : {
+    "1" : [ "4", "6" ],
+    "2" : [ "2", "4" ],
+    "3" : [ "5", "4" ],
+    "4" : [ "6", "4" ],
+    "5" : [ "6", "7" ],
+    "6" : [ "6", "3" ],
+    "7" : [ "5", "3" ],
+    "8" : [ "3", "0" ],
+    "9" : [ "3", "0" ]
+  }
+}
