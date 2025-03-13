@@ -1,0 +1,6 @@
+2025-03-13 18:12:34 [main] ERROR o.k.e.hendler.ConsoleErrorHandler - [a651025e-10cd-4b6f-96d4-94dab90536dc] Error 1000: Configuration with ID 6 is incomplete
+org.kuro.exceptions.special.ConfigurationException: Configuration with ID 6 is incomplete
+	at org.kuro.adapters.outgoing.FileReaderImpl.readConfiguration(FileReaderImpl.java:81)
+	at org.kuro.core.application.ConfigService.processConfig(ConfigService.java:35)
+	at org.kuro.adapters.incoming.CliAdapterImpl.process(CliAdapterImpl.java:23)
+	at org.kuro.Main.main(Main.java:21)

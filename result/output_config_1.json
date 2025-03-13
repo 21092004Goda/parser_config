@@ -1,0 +1,19 @@
+{
+  "configFile" : "C:\\Users\\samb2\\IdeaProjects\\parser_config\\tester.txt",
+  "configurationID" : 1,
+  "configurationData" : {
+    "path" : [ "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(1).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(2).txt" ],
+    "mode" : "FILES"
+  },
+  "out" : {
+    "1" : [ "aeilnaksdfjn isdkjfjds kjnsdkjsv ihjsd", "aisjdfn lkjasdfn; kjsd lkjnsdv kjnd  kijnkjvd" ],
+    "2" : [ "ajsdnkajnj kjsdnv", "askjdfngfn; kjsd lkjnsdv kjnd" ],
+    "3" : [ "lkjasdfn; kjsd lkjnsdv kjnd  kijnkjvd", "gfn dfngfn; kjsd lkjn" ],
+    "4" : [ "kjasd;n jfn; kjsd lkjn kdsn kjnds", "ijlad fngfn; kjsd lkjnsfkgn" ],
+    "5" : [ "kias jdssdfjn isd kjfjdkfn; kjsd lkjndjnlisadf", "ew fn lkjasdfn; kjsd lkjnsdv kjnd  kijoi;" ],
+    "6" : [ "ki qpwkasjm dcv skfn; kjsd lkjndjnlisadf", "aa bb cc" ],
+    "7" : [ "kiaskfn; kjsd lkjjdskfn; kjsd lkjndjnlisadf", "a b c" ],
+    "8" : [ "aa bb cc", "" ],
+    "9" : [ "a b c", "" ]
+  }
+}

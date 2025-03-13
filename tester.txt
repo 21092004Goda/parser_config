@@ -1,0 +1,24 @@
+#id: 1
+#mode: FILES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(1).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt
+#action: STRING
+
+#id: 2
+#mode: FILES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(1).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt
+#action: COUNT
+
+#id: 3
+#mode: FILES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(1).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt
+#action: REPLACE
+
+#id: 4
+#mode: DIRECTORIES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest
+#action: STRING
+
+#id: 5
+#mode: DIRECTORIES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest
+#action: REPLACE
