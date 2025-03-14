@@ -47,7 +47,7 @@ public class ConfigServiceTest {
     }
 
     @Test
-    void processConfigWithValidFilesConfigProcessesSingleFiles() throws IOException {
+    void processConfigWithValidFilesConfigProcessesSingleFiles() {
         // Given
         String configFile = "test-config.txt";
         int configId = 1;
@@ -90,7 +90,7 @@ public class ConfigServiceTest {
     }
 
     @Test
-    void processConfigWithConfigNotFoundThrowsException() throws IOException {
+    void processConfigWithConfigNotFoundThrowsException() {
         // Given
         String configFile = "test-config.txt";
         int configId = 1;
@@ -104,7 +104,7 @@ public class ConfigServiceTest {
     }
 
     @Test
-    void processConfigWithInvalidPathThrowsFileException() throws IOException {
+    void processConfigWithInvalidPathThrowsFileException() {
         // Given
         String configFile = "test-config.txt";
         int configId = 1;

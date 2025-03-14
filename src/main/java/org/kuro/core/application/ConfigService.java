@@ -33,66 +33,57 @@ public class ConfigService {
 
 
     public String processConfig(String configFile, int configId) {
+        Configuration config = configReader.readConfiguration(configFile, configId)
+                .orElseThrow(() -> new ConfigurationException(
+                        ErrorCode.CONFIGURATION_NOT_FOUND
+                ));
+
+
+        List<String> filePaths;
+
         try {
-            Configuration config = configReader.readConfiguration(configFile, configId)
-                    .orElseThrow(() -> new ConfigurationException(
-                            ErrorCode.CONFIGURATION_NOT_FOUND
-                    ));
-
-
-            List<String> filePaths;
-
-            try {
-                if (config.getMode().equals(ModeType.DIRECTORIES)) {
-                    filePaths = Files.list(Path.of(config.getPath().getFirst()))
-                            .filter(Files::isRegularFile)
-                            .map(Path::toString)
-                            .toList();
-                } else {
-                    filePaths = config.getPath();
-                }
-            } catch (IOException e) {
-                throw new FileException(
-                        ErrorCode.FILE_READ_ERROR,
-                        config.getPath().toString(),
-                        e
-                );
+            if (config.getMode().equals(ModeType.DIRECTORIES)) {
+                filePaths = Files.list(Path.of(config.getPath().getFirst()))
+                        .filter(Files::isRegularFile)
+                        .map(Path::toString)
+                        .toList();
+            } else {
+                filePaths = config.getPath();
             }
-
-            List<List<String>> fileContents = fileReader.readFiles(filePaths);
-            Map<Integer, List<String>> result = fileReader.processFiles(fileContents, config.getAction());
-
-            Map<String, Object> outputData = new LinkedHashMap<>();
-            outputData.put("configFile", configFile);
-            outputData.put("configurationID", configId);
-            outputData.put("configurationData", Map.of("mode", config.getMode(), "path", config.getPath()));
-            outputData.put("out", result);
-
-            Path projectRoot = Paths.get("").toAbsolutePath();
-            Path resultDir = projectRoot.resolve("result");
-
-            try {
-                if (Files.notExists(resultDir)) {
-                    Files.createDirectories(resultDir);
-                }
-            } catch (IOException e) {
-                throw new FileException(
-                        ErrorCode.DIRECTORY_CREATION_ERROR,
-                        result.toString(),
-                        e
-                );
-            }
-
-            Path filePath = resultDir.resolve("output_config_" + configId + ".json");
-
-            return writer.saveTo(outputData, filePath.toString());
-        } catch (ApplicationException e) {
-            throw e;
-        } catch (Exception e) {
-            throw new ProcessingException(
-                    ErrorCode.UNEXPECTED_ERROR,
+        } catch (IOException e) {
+            throw new FileException(
+                    ErrorCode.FILE_READ_ERROR,
+                    config.getPath().toString(),
                     e
             );
         }
+
+        List<List<String>> fileContents = fileReader.readFiles(filePaths);
+        Map<Integer, List<String>> result = fileReader.processFiles(fileContents, config.getAction());
+
+        Map<String, Object> outputData = new LinkedHashMap<>();
+        outputData.put("configFile", configFile);
+        outputData.put("configurationID", configId);
+        outputData.put("configurationData", Map.of("mode", config.getMode(), "path", config.getPath()));
+        outputData.put("out", result);
+
+        Path projectRoot = Paths.get("").toAbsolutePath();
+        Path resultDir = projectRoot.resolve("result");
+
+        try {
+            if (Files.notExists(resultDir)) {
+                Files.createDirectories(resultDir);
+            }
+        } catch (IOException e) {
+            throw new FileException(
+                    ErrorCode.DIRECTORY_CREATION_ERROR,
+                    result.toString(),
+                    e
+            );
+        }
+
+        Path filePath = resultDir.resolve("output_config_" + configId + ".json");
+
+        return writer.saveTo(outputData, filePath.toString());
     }
 }

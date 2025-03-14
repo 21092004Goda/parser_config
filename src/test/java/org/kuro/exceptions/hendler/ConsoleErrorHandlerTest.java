@@ -1,5 +1,6 @@
 package org.kuro.exceptions.hendler;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -72,7 +73,7 @@ class ConsoleErrorHandlerTest {
         verify(mockErrStream).println(contains("Unexpected error"));
     }
 
-    @Test
+    @AfterEach
     void tearDown() {
         System.setErr(originalErr);
     }

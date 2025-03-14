@@ -22,9 +22,6 @@ public class Main {
             IncomingAdapter incoming = getIncomingAdapter(args, errorHandler);
             incoming.process(args[0], Integer.parseInt(args[1]));
         }
-        catch (ApplicationException e) {
-            errorHandler.handle(e);
-        }
         catch (NumberFormatException e) {
             errorHandler.handle(
                     new ApplicationException(
@@ -32,6 +29,8 @@ public class Main {
                             e
                     )
             );
+        } catch (ApplicationException e) {
+            errorHandler.handle(e);
         }
         catch (Exception e) {
             errorHandler.handleUnexpected(e);

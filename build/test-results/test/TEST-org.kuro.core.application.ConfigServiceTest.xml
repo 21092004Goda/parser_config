@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.kuro.core.application.ConfigServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-03-14T16:00:43" hostname="KURO" time="0.149">
-  <properties/>
-  <testcase name="processConfigWithConfigNotFoundThrowsException()" classname="org.kuro.core.application.ConfigServiceTest" time="0.123"/>
-  <testcase name="processConfigWithInvalidPathThrowsFileException()" classname="org.kuro.core.application.ConfigServiceTest" time="0.005"/>
-  <testcase name="processConfigWithValidFilesConfigProcessesSingleFiles()" classname="org.kuro.core.application.ConfigServiceTest" time="0.017"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

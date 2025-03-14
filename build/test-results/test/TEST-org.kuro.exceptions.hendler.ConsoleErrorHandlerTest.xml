@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-03-14T16:00:43" hostname="KURO" time="0.26">
+<testsuite name="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-03-14T17:33:13" hostname="KURO" time="2.381">
   <properties/>
-  <testcase name="tearDown()" classname="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" time="0.174"/>
-  <testcase name="handleWithFileExceptionIncludesFilePathInDetails()" classname="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" time="0.066"/>
+  <testcase name="handleWithFileExceptionIncludesFilePathInDetails()" classname="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" time="2.349"/>
   <testcase name="handleUnexpectedWithExceptionPrintsToConsole()" classname="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" time="0.008"/>
-  <testcase name="handleWithApplicationExceptionPrintsToConsole()" classname="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" time="0.006"/>
+  <testcase name="handleWithApplicationExceptionPrintsToConsole()" classname="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" time="0.008"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\samb2\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.4\3bf5ac1104554908cc623e40e58a00be37c35f36\byte-buddy-agent-1.14.4.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
 </testsuite>

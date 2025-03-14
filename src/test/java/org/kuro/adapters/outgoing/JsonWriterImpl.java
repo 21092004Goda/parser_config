@@ -69,7 +69,6 @@ class JsonWriterImplTest {
     @Test
     void saveToShouldThrowExceptionWhenFileCannotBeWritten() {
         // Given
-        // Create a directory instead of a file to cause a write error
         Path dirPath = tempDir.resolve("cannot-write-here");
         try {
             Files.createDirectory(dirPath);

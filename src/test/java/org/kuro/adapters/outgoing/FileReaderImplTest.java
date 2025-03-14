@@ -54,7 +54,7 @@ class FileReaderImplTest {
         String nonExistentPath = tempDir.resolve("non-existent.txt").toString();
 
         // When & Then
-        FileException exception = assertThrows(FileException.class, () ->
+        assertThrows(FileException.class, () ->
                 fileReader.readFiles(List.of(nonExistentPath))
         );
     }

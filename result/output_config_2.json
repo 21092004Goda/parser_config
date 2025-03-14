@@ -2,8 +2,8 @@
   "configFile" : "C:\\Users\\samb2\\IdeaProjects\\parser_config\\tester.txt",
   "configurationID" : 2,
   "configurationData" : {
-    "mode" : "FILES",
-    "path" : [ "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(1).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(2).txt" ]
+    "path" : [ "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(1).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(2).txt" ],
+    "mode" : "FILES"
   },
   "out" : {
     "1" : [ "4", "6" ],
