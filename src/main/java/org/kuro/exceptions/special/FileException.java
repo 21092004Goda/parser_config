@@ -9,13 +9,13 @@ public class FileException extends ApplicationException {
 
     private final String filePath;
 
-    public FileException(ErrorCode errorCode, String message, String filePath) {
-        super(errorCode, message);
+    public FileException(ErrorCode errorCode, String filePath) {
+        super(errorCode);
         this.filePath = filePath;
     }
 
-    public FileException(ErrorCode errorCode, String message, String filePath, Throwable cause) {
-        super(errorCode, message, cause);
+    public FileException(ErrorCode errorCode, String filePath, Throwable cause) {
+        super(errorCode, cause);
         this.filePath = filePath;
     }
 

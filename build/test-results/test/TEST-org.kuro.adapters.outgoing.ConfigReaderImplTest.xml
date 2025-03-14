@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.kuro.adapters.outgoing.ConfigReaderImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-03-14T15:50:54" hostname="KURO" time="0.114">
+  <properties/>
+  <testcase name="readConfiguration_withMultipleConfigurations_shouldReturnCorrectOne()" classname="org.kuro.adapters.outgoing.ConfigReaderImplTest" time="0.053"/>
+  <testcase name="readConfiguration_whenInvalidAction_shouldThrowConfigurationException()" classname="org.kuro.adapters.outgoing.ConfigReaderImplTest" time="0.01"/>
+  <testcase name="readConfiguration_whenFileDoesNotExist_shouldThrowFileException()" classname="org.kuro.adapters.outgoing.ConfigReaderImplTest" time="0.009"/>
+  <testcase name="readConfiguration_whenConfigIdDoesNotExist_shouldThrowConfigurationException()" classname="org.kuro.adapters.outgoing.ConfigReaderImplTest" time="0.008"/>
+  <testcase name="readConfiguration_whenConfigExists_shouldReturnConfiguration()" classname="org.kuro.adapters.outgoing.ConfigReaderImplTest" time="0.007"/>
+  <testcase name="readConfiguration_whenIncompleteConfig_shouldThrowConfigurationException()" classname="org.kuro.adapters.outgoing.ConfigReaderImplTest" time="0.008"/>
+  <testcase name="readConfiguration_whenInvalidMode_shouldThrowConfigurationException()" classname="org.kuro.adapters.outgoing.ConfigReaderImplTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

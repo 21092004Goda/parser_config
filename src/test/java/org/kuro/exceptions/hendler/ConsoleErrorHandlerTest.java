@@ -31,11 +31,10 @@ class ConsoleErrorHandlerTest {
     }
 
     @Test
-    void handle_withApplicationException_printsToConsole() {
+    void handleWithApplicationExceptionPrintsToConsole() {
         // Given
         ApplicationException exception = new ApplicationException(
-                ErrorCode.VALIDATION_ERROR,
-                "Validation failed"
+                ErrorCode.VALIDATION_ERROR
         );
 
         // When
@@ -43,15 +42,13 @@ class ConsoleErrorHandlerTest {
 
         // Then
         verify(mockErrStream).println(contains("Error ["));
-        verify(mockErrStream).println(contains("Validation failed"));
     }
 
     @Test
-    void handle_withFileException_includesFilePathInDetails() {
+    void handleWithFileExceptionIncludesFilePathInDetails() {
         // Given
         FileException exception = new FileException(
                 ErrorCode.FILE_NOT_FOUND,
-                "File not found",
                 "/path/to/file"
         );
 
@@ -63,7 +60,7 @@ class ConsoleErrorHandlerTest {
     }
 
     @Test
-    void handleUnexpected_withException_printsToConsole() {
+    void handleUnexpectedWithExceptionPrintsToConsole() {
         // Given
         Exception exception = new RuntimeException("Unexpected error");
 

@@ -8,7 +8,8 @@ import org.kuro.core.domain.Configuration;
 import org.kuro.core.domain.ModeType;
 import org.kuro.exceptions.special.ConfigurationException;
 import org.kuro.exceptions.special.FileException;
-import org.kuro.port.outgoing.SourceReader;
+import org.kuro.port.outgoing.ConfigReader;
+import org.kuro.port.outgoing.FileReader;
 import org.kuro.port.outgoing.SourceWriter;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
@@ -33,17 +34,20 @@ public class ConfigServiceTest {
     private SourceWriter writer;
 
     @Mock
-    private SourceReader reader;
+    private ConfigReader configReader;
+
+    @Mock
+    private FileReader fileReader;
 
     private ConfigService configService;
 
     @BeforeEach
     void setUp() {
-        configService = new ConfigService(writer, reader);
+        configService = new ConfigService(writer, fileReader, configReader);
     }
 
     @Test
-    void processConfig_withValidFilesConfig_processesSingleFiles() throws IOException {
+    void processConfigWithValidFilesConfigProcessesSingleFiles() throws IOException {
         // Given
         String configFile = "test-config.txt";
         int configId = 1;
@@ -55,12 +59,12 @@ public class ConfigServiceTest {
                 ActionType.STRING
         );
 
-        when(reader.readConfiguration(configFile, configId)).thenReturn(Optional.of(config));
-        when(reader.readFiles(Arrays.asList("file1.txt", "file2.txt"))).thenReturn(Arrays.asList(
+        when(configReader.readConfiguration(configFile, configId)).thenReturn(Optional.of(config));
+        when(fileReader.readFiles(Arrays.asList("file1.txt", "file2.txt"))).thenReturn(Arrays.asList(
                 Arrays.asList("file1 content"),
                 Arrays.asList("file2 content")
         ));
-        when(reader.processFiles(Arrays.asList(
+        when(fileReader.processFiles(Arrays.asList(
                 Arrays.asList("file1 content"),
                 Arrays.asList("file2 content")
         ), ActionType.STRING)).thenReturn(Map.of(
@@ -86,12 +90,12 @@ public class ConfigServiceTest {
     }
 
     @Test
-    void processConfig_withConfigNotFound_throwsException() throws IOException {
+    void processConfigWithConfigNotFoundThrowsException() throws IOException {
         // Given
         String configFile = "test-config.txt";
         int configId = 1;
 
-        when(reader.readConfiguration(configFile, configId)).thenReturn(Optional.empty());
+        when(configReader.readConfiguration(configFile, configId)).thenReturn(Optional.empty());
 
         // When & Then
         assertThrows(ConfigurationException.class, () -> {
@@ -100,7 +104,7 @@ public class ConfigServiceTest {
     }
 
     @Test
-    void processConfig_withInvalidPath_throwsFileException() throws IOException {
+    void processConfigWithInvalidPathThrowsFileException() throws IOException {
         // Given
         String configFile = "test-config.txt";
         int configId = 1;
@@ -112,7 +116,7 @@ public class ConfigServiceTest {
                 ActionType.STRING
         );
 
-        when(reader.readConfiguration(configFile, configId)).thenReturn(Optional.of(config));
+        when(configReader.readConfiguration(configFile, configId)).thenReturn(Optional.of(config));
 
         // When & Then
         assertThrows(FileException.class, () -> {
