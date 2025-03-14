@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-03-14T16:00:43" hostname="KURO" time="0.26">
+  <properties/>
+  <testcase name="tearDown()" classname="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" time="0.174"/>
+  <testcase name="handleWithFileExceptionIncludesFilePathInDetails()" classname="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" time="0.066"/>
+  <testcase name="handleUnexpectedWithExceptionPrintsToConsole()" classname="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" time="0.008"/>
+  <testcase name="handleWithApplicationExceptionPrintsToConsole()" classname="org.kuro.exceptions.hendler.ConsoleErrorHandlerTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -27,6 +27,5 @@ public class CliAdapterImpl implements IncomingAdapter {
         } catch (Exception e) {
             errorHandler.handleUnexpected(e);
         }
-
     }
 }

@@ -23,7 +23,6 @@ public class JsonWriterImpl  implements SourceWriter {
                 if (!dirCreated) {
                     throw new FileException(
                             ErrorCode.DIRECTORY_CREATION_ERROR,
-                            "Failed to create directory for file: " + parentDir.getAbsolutePath(),
                             parentDir.getAbsolutePath()
                     );
                 }
@@ -35,7 +34,6 @@ public class JsonWriterImpl  implements SourceWriter {
         } catch (IOException e) {
             throw new FileException(
                     ErrorCode.FILE_WRITE_ERROR,
-                    "Failed to write data to file: " + outputPath,
                     outputPath,
                     e
             );

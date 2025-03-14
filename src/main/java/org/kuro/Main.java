@@ -1,6 +1,7 @@
 package org.kuro;
 
 import org.kuro.adapters.incoming.CliAdapterImpl;
+import org.kuro.adapters.outgoing.ConfigReaderImpl;
 import org.kuro.adapters.outgoing.JsonWriterImpl;
 import org.kuro.adapters.outgoing.FileReaderImpl;
 import org.kuro.core.application.ConfigService;
@@ -9,7 +10,8 @@ import org.kuro.exceptions.hendler.ConsoleErrorHandler;
 import org.kuro.exceptions.hendler.ErrorHandler;
 import org.kuro.exceptions.model.ErrorCode;
 import org.kuro.port.incoming.IncomingAdapter;
-import org.kuro.port.outgoing.SourceReader;
+import org.kuro.port.outgoing.ConfigReader;
+import org.kuro.port.outgoing.FileReader;
 import org.kuro.port.outgoing.SourceWriter;
 
 public class Main {
@@ -27,7 +29,6 @@ public class Main {
             errorHandler.handle(
                     new ApplicationException(
                             ErrorCode.INVALID_PARAMETER,
-                            "Invalid configuration ID: " + args[1], 
                             e
                     )
             );
@@ -40,14 +41,14 @@ public class Main {
     private static IncomingAdapter getIncomingAdapter(String[] args, ErrorHandler errorHandler) {
         if (args.length != 2) {
             throw new ApplicationException(
-                    ErrorCode.INVALID_PARAMETER,
-                    "Usage: java -jar app.jar <path> <id>"
+                    ErrorCode.INVALID_PARAMETER
             );
         }
 
         SourceWriter sourceWriter = new JsonWriterImpl();
-        SourceReader sourceReader = new FileReaderImpl();
-        ConfigService configService = new ConfigService(sourceWriter, sourceReader);
+        FileReader fileReader = new FileReaderImpl();
+        ConfigReader configReader = new ConfigReaderImpl();
+        ConfigService configService = new ConfigService(sourceWriter, fileReader, configReader);
         return new CliAdapterImpl(configService, errorHandler);
     }
 }
