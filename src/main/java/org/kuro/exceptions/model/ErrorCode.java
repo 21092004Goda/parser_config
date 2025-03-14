@@ -26,7 +26,6 @@ public enum ErrorCode {
 
 
     // Системные ошибки
-    SYSTEM_ERROR(9000, "System error"),
     UNEXPECTED_ERROR(9999, "Unexpected error");
 
 
