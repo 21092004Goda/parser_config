@@ -26,19 +26,30 @@
 
 ```txt
 #id: 1
-#mode: dir
-#path: /home/user/dirWithFiles1
-#action: string
+#mode: FILES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(1).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt
+#action: STRING
 
 #id: 2
-#mode: files
-#path: /home/user/dirWithFiles2/file.csv, /home/user/dirWithFiles2/file2.csv
-#action: count
+#mode: FILES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(1).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt
+#action: COUNT
 
 #id: 3
-#mode: dir
-#path: /home/user/dirWithFiles3
-#action: replace
+#mode: FILES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(3).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt
+#action: REPLACE
+
+#id: 4
+#mode: DIRECTORIES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest
+#action: STRING
+
+#id: 4
+#mode: DIRECTORIES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest
+#action: COUNT
+
 ```
 
 ### Требования к реализации
@@ -88,28 +99,30 @@
 }
 ```
 
-### Установка
+### Пояснения
 
-1. Клонируйте репозиторий:
-
-   ```bash
-   git clone https://github.com/yourusername/parser_config.git
-   cd parser_config
+1. Основные файлы:
+   ```
+   ..\parser_config\tester.txt - Это файл с тестовыми конфигурациями
+   ..\parser_config\configTest - Это директория с текстом. (Если нужно запустить с консоли)
+   ..\parser_config\result     - Это дериктория с json результатом.
+   
    ```
 
-2. Скомпилируйте проект с помощью **Maven**:
-
+2. Клонируйте репозиторий:
    ```bash
-   mvn clean install
+   git clone https://github.com/21092004Goda/parser_config.git
+   
    ```
 
 3. Запустите программу, передав аргументы:
 
    ```bash
-   java -jar parser_config.jar /path/to/config.txt 1
-   ```
+   java -jar build/libs/parser_config-1.0-SNAPSHOT.jar ../path/parser_config/tester.txt 2
 
+   ```
    Где:
     - `/path/to/config.txt` — путь к вашему конфигурационному файлу.
     - `1` — номер конфигурации, которую нужно обработать.
+
 
