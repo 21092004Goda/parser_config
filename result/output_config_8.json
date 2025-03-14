@@ -1,0 +1,20 @@
+{
+  "configFile" : "C:\\Users\\samb2\\IdeaProjects\\parser_config\\tester.txt",
+  "configurationID" : 8,
+  "configurationData" : {
+    "mode" : "FILES",
+    "path" : [ "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(1).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(2).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(3).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(2).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(1).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(2).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(3).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(2).txt" ]
+  },
+  "out" : {
+    "1" : [ "2eiln2ksdfjn isdkjfjds kjnsdkjsv ihjsd", "3isjdfn lkj3sdfn; kjsd lkjnsdv kjnd  kijnkjvd", "4isjdfn lkj4sdfn; kjsd lkjnsdv kjnd  kijnkjvd", "5isjdfn lkj5sdfn; kjsd lkjnsdv kjnd  kijnkjvd", "6eiln6ksdfjn isdkjfjds kjnsdkjsv ihjsd", "7isjdfn lkj7sdfn; kjsd lkjnsdv kjnd  kijnkjvd", "8isjdfn lkj8sdfn; kjsd lkjnsdv kjnd  kijnkjvd", "9isjdfn lkj9sdfn; kjsd lkjnsdv kjnd  kijnkjvd" ],
+    "2" : [ "2jsdnk2jnj kjsdnv", "3skjdfngfn; kjsd lkjnsdv kjnd", "4skjdfngfn;", "5skjdfngfn; kjsd lkjnsdv kjnd", "6jsdnk6jnj kjsdnv", "7skjdfngfn; kjsd lkjnsdv kjnd", "8skjdfngfn;", "9skjdfngfn; kjsd lkjnsdv kjnd" ],
+    "3" : [ "lkj2sdfn; kjsd lkjnsdv kjnd  kijnkjvd", "gfn dfngfn; kjsd lkjn", "gfn dfngfn; kjsd lkjn", "gfn dfngfn; kjsd lkjn", "lkj6sdfn; kjsd lkjnsdv kjnd  kijnkjvd", "gfn dfngfn; kjsd lkjn", "gfn dfngfn; kjsd lkjn", "gfn dfngfn; kjsd lkjn" ],
+    "4" : [ "kj2sd;n jfn; kjsd lkjn kdsn kjnds", "ijl3d fngfn; kjsd lkjnsfkgn", "ijl4d fngfn; kjsd lkjnsfkgn", "ijl5d fngfn; kjsd lkjnsfkgn", "kj6sd;n jfn; kjsd lkjn kdsn kjnds", "ijl7d fngfn; kjsd lkjnsfkgn", "ijl8d fngfn; kjsd lkjnsfkgn", "ijl9d fngfn; kjsd lkjnsfkgn" ],
+    "5" : [ "ki2s jdssdfjn isd kjfjdkfn; kjsd lkjndjnlis2df", "ew fn lkj3sdfn; kjsd lkjnsdv kjnd  kijoi;", "ew fn lkj4sdfn; kjskjsd lkjnsdv kjnd", "ew fn lkj5sdfn; kjsd lkjnsdv kjnd  kijoi;", "ki6s jdssdfjn isd kjfjdkfn; kjsd lkjndjnlis6df", "ew fn lkj7sdfn; kjsd lkjnsdv kjnd  kijoi;", "ew fn lkj8sdfn; kjskjsd lkjnsdv kjnd", "ew fn lkj9sdfn; kjsd lkjnsdv kjnd  kijoi;" ],
+    "6" : [ "ki qpwk2sjm d4v skfn; kjsd lkjndjnlis2df", "33 44 55", "44 55 66", "55 66 77", "ki qpwk6sjm d8v skfn; kjsd lkjndjnlis6df", "77 88 99", "88 99 1010", "99 1010 1111" ],
+    "7" : [ "ki2skfn; kjsd lkjjdskfn; kjsd lkjndjnlis2df", "3 4 5", "gfn dfngfn; kjsd lkjn", "5 6 7", "ki6skfn; kjsd lkjjdskfn; kjsd lkjndjnlis6df", "7 8 9", "gfn dfngfn; kjsd lkjn", "9 10 11" ],
+    "8" : [ "22 33 44", "", "ijl4d fngfn; kjsd lkjnsfkgn", "", "66 77 88", "", "ijl8d fngfn; kjsd lkjnsfkgn", "" ],
+    "9" : [ "2 3 4", "", "ew fn lkj4sdfn; kjsd lkjnsdv kjnd  kijoi;", "", "6 7 8", "", "ew fn lkj8sdfn; kjsd lkjnsdv kjnd  kijoi;", "" ],
+    "10" : [ "", "", "4 5 6", "", "", "", "8 9 10", "" ]
+  }
+}

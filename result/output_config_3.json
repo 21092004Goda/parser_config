@@ -2,18 +2,19 @@
   "configFile" : "C:\\Users\\samb2\\IdeaProjects\\parser_config\\tester.txt",
   "configurationID" : 3,
   "configurationData" : {
-    "mode" : "FILES",
-    "path" : [ "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(1).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(2).txt" ]
+    "path" : [ "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(3).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(2).txt" ],
+    "mode" : "FILES"
   },
   "out" : {
-    "1" : [ "2eiln2ksdfjn isdkjfjds kjnsdkjsv ihjsd", "3isjdfn lkj3sdfn; kjsd lkjnsdv kjnd  kijnkjvd" ],
-    "2" : [ "2jsdnk2jnj kjsdnv", "3skjdfngfn; kjsd lkjnsdv kjnd" ],
-    "3" : [ "lkj2sdfn; kjsd lkjnsdv kjnd  kijnkjvd", "gfn dfngfn; kjsd lkjn" ],
-    "4" : [ "kj2sd;n jfn; kjsd lkjn kdsn kjnds", "ijl3d fngfn; kjsd lkjnsfkgn" ],
-    "5" : [ "ki2s jdssdfjn isd kjfjdkfn; kjsd lkjndjnlis2df", "ew fn lkj3sdfn; kjsd lkjnsdv kjnd  kijoi;" ],
-    "6" : [ "ki qpwk2sjm d4v skfn; kjsd lkjndjnlis2df", "33 44 55" ],
-    "7" : [ "ki2skfn; kjsd lkjjdskfn; kjsd lkjndjnlis2df", "3 4 5" ],
-    "8" : [ "22 33 44", "" ],
-    "9" : [ "2 3 4", "" ]
+    "1" : [ "2isjdfn lkj2sdfn; kjsd lkjnsdv kjnd  kijnkjvd", "3isjdfn lkj3sdfn; kjsd lkjnsdv kjnd  kijnkjvd" ],
+    "2" : [ "2skjdfngfn;", "3skjdfngfn; kjsd lkjnsdv kjnd" ],
+    "3" : [ "gfn dfngfn; kjsd lkjn", "gfn dfngfn; kjsd lkjn" ],
+    "4" : [ "ijl2d fngfn; kjsd lkjnsfkgn", "ijl3d fngfn; kjsd lkjnsfkgn" ],
+    "5" : [ "ew fn lkj2sdfn; kjskjsd lkjnsdv kjnd", "ew fn lkj3sdfn; kjsd lkjnsdv kjnd  kijoi;" ],
+    "6" : [ "22 33 44", "33 44 55" ],
+    "7" : [ "gfn dfngfn; kjsd lkjn", "3 4 5" ],
+    "8" : [ "ijl2d fngfn; kjsd lkjnsfkgn", "" ],
+    "9" : [ "ew fn lkj2sdfn; kjsd lkjnsdv kjnd  kijoi;", "" ],
+    "10" : [ "2 3 4", "" ]
   }
 }

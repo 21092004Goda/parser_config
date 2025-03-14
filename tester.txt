@@ -10,7 +10,7 @@
 
 #id: 3
 #mode: FILES
-#path: C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(1).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(3).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt
 #action: REPLACE
 
 #id: 4
@@ -18,7 +18,27 @@
 #path: C:\Users\samb2\IdeaProjects\parser_config\configTest
 #action: STRING
 
+#id: 4
+#mode: DIRECTORIES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest
+#action: COUNT
+
 #id: 5
 #mode: DIRECTORIES
 #path: C:\Users\samb2\IdeaProjects\parser_config\configTest
+#action: REPLACE
+
+#id: 6
+#mode: FILES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(1).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(3).txt
+#action: STRING
+
+#id: 7
+#mode: FILES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(1).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(1).txt
+#action: COUNT
+
+#id: 8
+#mode: FILES
+#path: C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(1).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(3).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(1).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(3).txt,C:\Users\samb2\IdeaProjects\parser_config\configTest\TextDocument(2).txt
 #action: REPLACE

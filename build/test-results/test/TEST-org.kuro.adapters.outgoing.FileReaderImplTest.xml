@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.kuro.adapters.outgoing.FileReaderImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-03-14T18:08:32" hostname="KURO" time="0.077">
+  <properties/>
+  <testcase name="processFilesWithDifferentFileLengthsShouldHandleCorrectly()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.016"/>
+  <testcase name="processFilesWithStringActionShouldReturnOriginalContent()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.007"/>
+  <testcase name="readFilesShouldReadMultipleFilesSuccessfully()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.013"/>
+  <testcase name="processFilesWithEmptyFilesShouldHandleCorrectly()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.006"/>
+  <testcase name="readFilesShouldThrowFileExceptionWhenFileNotFound()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.009"/>
+  <testcase name="processFilesWithCountActionShouldCountWords()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.007"/>
+  <testcase name="processFilesWithReplaceActionShouldReplaceCharacters()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

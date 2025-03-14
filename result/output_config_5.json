@@ -2,8 +2,8 @@
   "configFile" : "C:\\Users\\samb2\\IdeaProjects\\parser_config\\tester.txt",
   "configurationID" : 5,
   "configurationData" : {
-    "mode" : "DIRECTORIES",
-    "path" : [ "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest" ]
+    "path" : [ "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest" ],
+    "mode" : "DIRECTORIES"
   },
   "out" : {
     "1" : [ "2eiln2ksdfjn isdkjfjds kjnsdkjsv ihjsd", "3isjdfn lkj3sdfn; kjsd lkjnsdv kjnd  kijnkjvd", "4isjdfn lkj4sdfn; kjsd lkjnsdv kjnd  kijnkjvd" ],

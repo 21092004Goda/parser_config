@@ -1,9 +1,9 @@
 {
   "configFile" : "C:\\Users\\samb2\\IdeaProjects\\parser_config\\tester.txt",
-  "configurationID" : 4,
+  "configurationID" : 6,
   "configurationData" : {
-    "mode" : "DIRECTORIES",
-    "path" : [ "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest" ]
+    "path" : [ "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(1).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(2).txt", "C:\\Users\\samb2\\IdeaProjects\\parser_config\\configTest\\TextDocument(3).txt" ],
+    "mode" : "FILES"
   },
   "out" : {
     "1" : [ "aeilnaksdfjn isdkjfjds kjnsdkjsv ihjsd", "aisjdfn lkjasdfn; kjsd lkjnsdv kjnd  kijnkjvd", "aisjdfn lkjasdfn; kjsd lkjnsdv kjnd  kijnkjvd" ],

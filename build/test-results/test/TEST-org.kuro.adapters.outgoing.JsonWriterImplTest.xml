@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.kuro.adapters.outgoing.JsonWriterImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-03-14T18:08:32" hostname="KURO" time="0.437">
+  <properties/>
+  <testcase name="saveToShouldThrowExceptionWhenDirectoryCannotBeCreated()" classname="org.kuro.adapters.outgoing.JsonWriterImplTest" time="0.008"/>
+  <testcase name="saveToShouldThrowExceptionWhenFileCannotBeWritten()" classname="org.kuro.adapters.outgoing.JsonWriterImplTest" time="0.355"/>
+  <testcase name="saveToShouldWriteJsonToExistingDirectory()" classname="org.kuro.adapters.outgoing.JsonWriterImplTest" time="0.056"/>
+  <testcase name="saveToShouldCreateDirectoriesIfNeeded()" classname="org.kuro.adapters.outgoing.JsonWriterImplTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
