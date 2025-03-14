@@ -7,5 +7,5 @@ import java.util.Map;
 
 public interface FileReader {
     List<List<String>> readFiles(List<String> paths);
-    Map<Integer, List<String>> processFiles(List<List<String>> fileContents, ActionType actionType);
+    Map<Integer, Map<Integer, String>> processFiles(List<List<String>> fileContents, ActionType actionType);
 }

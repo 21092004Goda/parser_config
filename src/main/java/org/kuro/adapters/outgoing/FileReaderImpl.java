@@ -39,27 +39,30 @@ public class FileReaderImpl implements FileReader {
     }
 
     @Override
-    public Map<Integer, List<String>> processFiles(List<List<String>> fileContents, ActionType actionType) {
+    public Map<Integer, Map<Integer, String>> processFiles(List<List<String>> fileContents, ActionType actionType) {
         try {
             int maxLine = fileContents.stream().mapToInt(List::size).max().orElse(0);
-            Map<Integer, List<String>> result = new HashMap<>();
+            Map<Integer, Map<Integer, String>> result = new LinkedHashMap<>();
 
             for (int k = 0; k < maxLine; k++) {
-                List<String> lineGroup = new ArrayList<>();
+                Map<Integer, String> lineMap = new LinkedHashMap<>();
 
                 for (int fileIndex = 0; fileIndex < fileContents.size(); fileIndex++) {
                     List<String> file = fileContents.get(fileIndex);
                     String line = k < file.size() ? file.get(k) : "";
 
+                    String processedLine;
                     if (actionType == ActionType.STRING) {
-                        lineGroup.add(line);
+                        processedLine = line;
                     } else if (actionType == ActionType.COUNT) {
-                        lineGroup.add(String.valueOf(line.isEmpty() ? 0 : line.split("\\s+").length));
-                    } else if (actionType == ActionType.REPLACE) {
-                        lineGroup.add(replaceChars(line, fileIndex + 1));
+                        processedLine = String.valueOf(line.isEmpty() ? 0 : line.split("\\s+").length);
+                    } else { // REPLACE
+                        processedLine = replaceChars(line, fileIndex + 1);
                     }
+
+                    lineMap.put(fileIndex + 1, processedLine);
                 }
-                result.put(k + 1, lineGroup);
+                result.put(k + 1, lineMap);
             }
             return result;
         } catch (Exception e) {

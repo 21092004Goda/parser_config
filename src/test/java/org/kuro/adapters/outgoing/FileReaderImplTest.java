@@ -68,12 +68,18 @@ class FileReaderImplTest {
         );
 
         // When
-        Map<Integer, List<String>> result = fileReader.processFiles(fileContents, ActionType.STRING);
+        Map<Integer, Map<Integer, String>> result = fileReader.processFiles(fileContents, ActionType.STRING);
 
         // Then
         assertEquals(2, result.size());
-        assertEquals(Arrays.asList("File 1 Line 1", "File 2 Line 1"), result.get(1));
-        assertEquals(Arrays.asList("File 1 Line 2", "File 2 Line 2"), result.get(2));
+
+        Map<Integer, String> line1Map = result.get(1);
+        assertEquals("File 1 Line 1", line1Map.get(1));
+        assertEquals("File 2 Line 1", line1Map.get(2));
+
+        Map<Integer, String> line2Map = result.get(2);
+        assertEquals("File 1 Line 2", line2Map.get(1));
+        assertEquals("File 2 Line 2", line2Map.get(2));
     }
 
     @Test
@@ -85,12 +91,18 @@ class FileReaderImplTest {
         );
 
         // When
-        Map<Integer, List<String>> result = fileReader.processFiles(fileContents, ActionType.COUNT);
+        Map<Integer, Map<Integer, String>> result = fileReader.processFiles(fileContents, ActionType.COUNT);
 
         // Then
         assertEquals(2, result.size());
-        assertEquals(Arrays.asList("3", "2"), result.get(1));
-        assertEquals(Arrays.asList("1", "0"), result.get(2));
+
+        Map<Integer, String> line1Map = result.get(1);
+        assertEquals("3", line1Map.get(1));
+        assertEquals("2", line1Map.get(2));
+
+        Map<Integer, String> line2Map = result.get(2);
+        assertEquals("1", line2Map.get(1));
+        assertEquals("0", line2Map.get(2));
     }
 
     @Test
@@ -102,12 +114,18 @@ class FileReaderImplTest {
         );
 
         // When
-        Map<Integer, List<String>> result = fileReader.processFiles(fileContents, ActionType.REPLACE);
+        Map<Integer, Map<Integer, String>> result = fileReader.processFiles(fileContents, ActionType.REPLACE);
 
         // Then
         assertEquals(2, result.size());
-        assertEquals(Arrays.asList("234", "345"), result.get(1)); // a→2, b→3, c→4 for file1; a→3, b→4, c→5 for file2
-        assertEquals(Arrays.asList("def", "xyz"), result.get(2)); // no replacements
+
+        Map<Integer, String> line1Map = result.get(1);
+        assertEquals("234", line1Map.get(1)); // a→2, b→3, c→4 for file1
+        assertEquals("345", line1Map.get(2)); // a→3, b→4, c→5 for file2
+
+        Map<Integer, String> line2Map = result.get(2);
+        assertEquals("def", line2Map.get(1)); // no replacements
+        assertEquals("xyz", line2Map.get(2)); // no replacements
     }
 
     @Test
@@ -119,13 +137,22 @@ class FileReaderImplTest {
         );
 
         // When
-        Map<Integer, List<String>> result = fileReader.processFiles(fileContents, ActionType.STRING);
+        Map<Integer, Map<Integer, String>> result = fileReader.processFiles(fileContents, ActionType.STRING);
 
         // Then
         assertEquals(3, result.size());
-        assertEquals(Arrays.asList("File 1 Line 1", "File 2 Line 1"), result.get(1));
-        assertEquals(Arrays.asList("File 1 Line 2", ""), result.get(2));
-        assertEquals(Arrays.asList("File 1 Line 3", ""), result.get(3));
+
+        Map<Integer, String> line1Map = result.get(1);
+        assertEquals("File 1 Line 1", line1Map.get(1));
+        assertEquals("File 2 Line 1", line1Map.get(2));
+
+        Map<Integer, String> line2Map = result.get(2);
+        assertEquals("File 1 Line 2", line2Map.get(1));
+        assertEquals("", line2Map.get(2));
+
+        Map<Integer, String> line3Map = result.get(3);
+        assertEquals("File 1 Line 3", line3Map.get(1));
+        assertEquals("", line3Map.get(2));
     }
 
     @Test
@@ -137,7 +164,7 @@ class FileReaderImplTest {
         );
 
         // When
-        Map<Integer, List<String>> result = fileReader.processFiles(fileContents, ActionType.STRING);
+        Map<Integer, Map<Integer, String>> result = fileReader.processFiles(fileContents, ActionType.STRING);
 
         // Then
         assertEquals(0, result.size());

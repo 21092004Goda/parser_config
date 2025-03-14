@@ -15,8 +15,8 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.io.IOException;
 import java.util.Arrays;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
 
@@ -64,16 +64,16 @@ public class ConfigServiceTest {
                 Arrays.asList("file1 content"),
                 Arrays.asList("file2 content")
         ));
-        when(fileReader.processFiles(Arrays.asList(
-                Arrays.asList("file1 content"),
-                Arrays.asList("file2 content")
-        ), ActionType.STRING)).thenReturn(Map.of(
-                1, Arrays.asList("file1 content"),
-                2, Arrays.asList("file2 content")
-        ));
+
+        Map<Integer, Map<Integer, String>> processedResult = new LinkedHashMap<>();
+        Map<Integer, String> lineMap = new LinkedHashMap<>();
+        lineMap.put(1, "file1 content");
+        lineMap.put(2, "file2 content");
+        processedResult.put(1, lineMap);
+
+        when(fileReader.processFiles(any(), any())).thenReturn(processedResult);
 
         when(writer.saveTo(any(), anyString())).thenReturn("output.json");
-
 
         // When
         String result = configService.processConfig(configFile, configId);

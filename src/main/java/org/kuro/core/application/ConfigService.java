@@ -59,7 +59,7 @@ public class ConfigService {
         }
 
         List<List<String>> fileContents = fileReader.readFiles(filePaths);
-        Map<Integer, List<String>> result = fileReader.processFiles(fileContents, config.getAction());
+        Map<Integer, Map<Integer, String>> result = fileReader.processFiles(fileContents, config.getAction());
 
         Map<String, Object> outputData = new LinkedHashMap<>();
         outputData.put("configFile", configFile);

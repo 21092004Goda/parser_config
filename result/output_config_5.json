@@ -6,15 +6,55 @@
     "mode" : "DIRECTORIES"
   },
   "out" : {
-    "1" : [ "2eiln2ksdfjn isdkjfjds kjnsdkjsv ihjsd", "3isjdfn lkj3sdfn; kjsd lkjnsdv kjnd  kijnkjvd", "4isjdfn lkj4sdfn; kjsd lkjnsdv kjnd  kijnkjvd" ],
-    "2" : [ "2jsdnk2jnj kjsdnv", "3skjdfngfn; kjsd lkjnsdv kjnd", "4skjdfngfn;" ],
-    "3" : [ "lkj2sdfn; kjsd lkjnsdv kjnd  kijnkjvd", "gfn dfngfn; kjsd lkjn", "gfn dfngfn; kjsd lkjn" ],
-    "4" : [ "kj2sd;n jfn; kjsd lkjn kdsn kjnds", "ijl3d fngfn; kjsd lkjnsfkgn", "ijl4d fngfn; kjsd lkjnsfkgn" ],
-    "5" : [ "ki2s jdssdfjn isd kjfjdkfn; kjsd lkjndjnlis2df", "ew fn lkj3sdfn; kjsd lkjnsdv kjnd  kijoi;", "ew fn lkj4sdfn; kjskjsd lkjnsdv kjnd" ],
-    "6" : [ "ki qpwk2sjm d4v skfn; kjsd lkjndjnlis2df", "33 44 55", "44 55 66" ],
-    "7" : [ "ki2skfn; kjsd lkjjdskfn; kjsd lkjndjnlis2df", "3 4 5", "gfn dfngfn; kjsd lkjn" ],
-    "8" : [ "22 33 44", "", "ijl4d fngfn; kjsd lkjnsfkgn" ],
-    "9" : [ "2 3 4", "", "ew fn lkj4sdfn; kjsd lkjnsdv kjnd  kijoi;" ],
-    "10" : [ "", "", "4 5 6" ]
+    "1" : {
+      "1" : "2eiln2ksdfjn isdkjfjds kjnsdkjsv ihjsd",
+      "2" : "3isjdfn lkj3sdfn; kjsd lkjnsdv kjnd  kijnkjvd",
+      "3" : "4isjdfn lkj4sdfn; kjsd lkjnsdv kjnd  kijnkjvd"
+    },
+    "2" : {
+      "1" : "2jsdnk2jnj kjsdnv",
+      "2" : "3skjdfngfn; kjsd lkjnsdv kjnd",
+      "3" : "4skjdfngfn;"
+    },
+    "3" : {
+      "1" : "lkj2sdfn; kjsd lkjnsdv kjnd  kijnkjvd",
+      "2" : "gfn dfngfn; kjsd lkjn",
+      "3" : "gfn dfngfn; kjsd lkjn"
+    },
+    "4" : {
+      "1" : "kj2sd;n jfn; kjsd lkjn kdsn kjnds",
+      "2" : "ijl3d fngfn; kjsd lkjnsfkgn",
+      "3" : "ijl4d fngfn; kjsd lkjnsfkgn"
+    },
+    "5" : {
+      "1" : "ki2s jdssdfjn isd kjfjdkfn; kjsd lkjndjnlis2df",
+      "2" : "ew fn lkj3sdfn; kjsd lkjnsdv kjnd  kijoi;",
+      "3" : "ew fn lkj4sdfn; kjskjsd lkjnsdv kjnd"
+    },
+    "6" : {
+      "1" : "ki qpwk2sjm d4v skfn; kjsd lkjndjnlis2df",
+      "2" : "33 44 55",
+      "3" : "44 55 66"
+    },
+    "7" : {
+      "1" : "ki2skfn; kjsd lkjjdskfn; kjsd lkjndjnlis2df",
+      "2" : "3 4 5",
+      "3" : "gfn dfngfn; kjsd lkjn"
+    },
+    "8" : {
+      "1" : "22 33 44",
+      "2" : "",
+      "3" : "ijl4d fngfn; kjsd lkjnsfkgn"
+    },
+    "9" : {
+      "1" : "2 3 4",
+      "2" : "",
+      "3" : "ew fn lkj4sdfn; kjsd lkjnsdv kjnd  kijoi;"
+    },
+    "10" : {
+      "1" : "",
+      "2" : "",
+      "3" : "4 5 6"
+    }
   }
 }

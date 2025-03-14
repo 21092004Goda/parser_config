@@ -1,9 +1,12 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group = 'org.kuro'
 version = '1.0-SNAPSHOT'
+
+mainClassName = 'org.kuro.Main'
 
 repositories {
     mavenCentral()
@@ -22,6 +25,17 @@ dependencies {
     testImplementation 'org.assertj:assertj-core:3.24.2'
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.kuro.Main'
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
 
 test {
     useJUnitPlatform()
