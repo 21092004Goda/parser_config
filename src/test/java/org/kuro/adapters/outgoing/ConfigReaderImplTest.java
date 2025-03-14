@@ -115,7 +115,6 @@ class ConfigReaderImplTest {
         List<String> lines = Arrays.asList(
                 "#id: 1",
                 "#mode: FILES"
-                // Missing path and action
         );
         Files.write(configFile, lines);
 

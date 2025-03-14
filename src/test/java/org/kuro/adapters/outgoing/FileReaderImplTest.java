@@ -120,12 +120,12 @@ class FileReaderImplTest {
         assertEquals(2, result.size());
 
         Map<Integer, String> line1Map = result.get(1);
-        assertEquals("234", line1Map.get(1)); // a→2, b→3, c→4 for file1
-        assertEquals("345", line1Map.get(2)); // a→3, b→4, c→5 for file2
+        assertEquals("234", line1Map.get(1));
+        assertEquals("345", line1Map.get(2));
 
         Map<Integer, String> line2Map = result.get(2);
-        assertEquals("def", line2Map.get(1)); // no replacements
-        assertEquals("xyz", line2Map.get(2)); // no replacements
+        assertEquals("def", line2Map.get(1));
+        assertEquals("xyz", line2Map.get(2));
     }
 
     @Test
