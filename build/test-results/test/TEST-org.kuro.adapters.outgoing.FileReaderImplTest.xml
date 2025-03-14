@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.kuro.adapters.outgoing.FileReaderImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-03-14T15:50:54" hostname="KURO" time="0.055">
+<testsuite name="org.kuro.adapters.outgoing.FileReaderImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-03-14T16:00:42" hostname="KURO" time="0.058">
   <properties/>
-  <testcase name="processFiles_withEmptyFiles_shouldHandleCorrectly()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.01"/>
-  <testcase name="processFiles_withReplaceAction_shouldReplaceCharacters()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.005"/>
-  <testcase name="readFiles_shouldThrowFileExceptionWhenFileNotFound()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.006"/>
-  <testcase name="processFiles_withStringAction_shouldReturnOriginalContent()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.006"/>
-  <testcase name="readFiles_shouldReadMultipleFilesSuccessfully()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.009"/>
-  <testcase name="processFiles_withCountAction_shouldCountWords()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.006"/>
-  <testcase name="processFiles_withDifferentFileLengths_shouldHandleCorrectly()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.004"/>
+  <testcase name="processFilesWithDifferentFileLengthsShouldHandleCorrectly()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.01"/>
+  <testcase name="processFilesWithStringActionShouldReturnOriginalContent()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.006"/>
+  <testcase name="readFilesShouldReadMultipleFilesSuccessfully()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.011"/>
+  <testcase name="processFilesWithEmptyFilesShouldHandleCorrectly()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.005"/>
+  <testcase name="readFilesShouldThrowFileExceptionWhenFileNotFound()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.006"/>
+  <testcase name="processFilesWithCountActionShouldCountWords()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.006"/>
+  <testcase name="processFilesWithReplaceActionShouldReplaceCharacters()" classname="org.kuro.adapters.outgoing.FileReaderImplTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

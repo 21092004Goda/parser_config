@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.kuro.adapters.outgoing.JsonWriterImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-03-14T15:50:54" hostname="KURO" time="0.955">
+<testsuite name="org.kuro.adapters.outgoing.JsonWriterImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-03-14T16:00:42" hostname="KURO" time="0.396">
   <properties/>
-  <testcase name="saveTo_shouldThrowException_whenFileCannotBeWritten()" classname="org.kuro.adapters.outgoing.JsonWriterImplTest" time="0.851"/>
-  <testcase name="saveTo_shouldCreateDirectoriesIfNeeded()" classname="org.kuro.adapters.outgoing.JsonWriterImplTest" time="0.086"/>
-  <testcase name="saveTo_shouldThrowException_whenDirectoryCannotBeCreated()" classname="org.kuro.adapters.outgoing.JsonWriterImplTest" time="0.006"/>
-  <testcase name="saveTo_shouldWriteJsonToExistingDirectory()" classname="org.kuro.adapters.outgoing.JsonWriterImplTest" time="0.007"/>
+  <testcase name="saveToShouldThrowExceptionWhenDirectoryCannotBeCreated()" classname="org.kuro.adapters.outgoing.JsonWriterImplTest" time="0.008"/>
+  <testcase name="saveToShouldThrowExceptionWhenFileCannotBeWritten()" classname="org.kuro.adapters.outgoing.JsonWriterImplTest" time="0.32"/>
+  <testcase name="saveToShouldWriteJsonToExistingDirectory()" classname="org.kuro.adapters.outgoing.JsonWriterImplTest" time="0.051"/>
+  <testcase name="saveToShouldCreateDirectoriesIfNeeded()" classname="org.kuro.adapters.outgoing.JsonWriterImplTest" time="0.012"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

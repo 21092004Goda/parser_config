@@ -11,9 +11,8 @@ public enum ErrorCode {
 
     // Файловые ошибки
     FILE_NOT_FOUND(2000, "File not found"),
-    FILE_ACCESS_DENIED(2001, "Access denied"),
-    FILE_READ_ERROR(2002, "Read error"),
-    FILE_WRITE_ERROR(2003, "Write error"),
+    FILE_READ_ERROR(2001, "Read error"),
+    FILE_WRITE_ERROR(2002, "Write error"),
 
     // Ошибки директорий
     DIRECTORY_CREATION_ERROR(2500, "Directory creation error"),

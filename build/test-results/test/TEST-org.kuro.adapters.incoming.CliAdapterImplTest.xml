@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.kuro.adapters.incoming.CliAdapterImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-03-14T15:50:50" hostname="KURO" time="3.497">
+<testsuite name="org.kuro.adapters.incoming.CliAdapterImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-03-14T16:00:40" hostname="KURO" time="1.759">
   <properties/>
-  <testcase name="process_shouldHandleApplicationException_whenThrown()" classname="org.kuro.adapters.incoming.CliAdapterImplTest" time="3.431"/>
-  <testcase name="process_shouldHandleUnexpectedException_whenThrown()" classname="org.kuro.adapters.incoming.CliAdapterImplTest" time="0.01"/>
-  <testcase name="process_shouldCallConfigServiceAndPrintOutput_whenSuccessful()" classname="org.kuro.adapters.incoming.CliAdapterImplTest" time="0.046"/>
+  <testcase name="processShouldHandleUnexpectedExceptionWhenThrown()" classname="org.kuro.adapters.incoming.CliAdapterImplTest" time="1.674"/>
+  <testcase name="processShouldCallConfigServiceAndPrintOutputWhenSuccessful()" classname="org.kuro.adapters.incoming.CliAdapterImplTest" time="0.059"/>
+  <testcase name="processShouldHandleApplicationExceptionWhenThrown()" classname="org.kuro.adapters.incoming.CliAdapterImplTest" time="0.013"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\samb2\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.4\3bf5ac1104554908cc623e40e58a00be37c35f36\byte-buddy-agent-1.14.4.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
