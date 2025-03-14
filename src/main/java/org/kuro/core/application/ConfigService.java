@@ -1,7 +1,6 @@
 package org.kuro.core.application;
 
 import org.kuro.core.domain.Configuration;
-import org.kuro.core.domain.FileProcessor;
 import org.kuro.core.domain.ModeType;
 import org.kuro.exceptions.ApplicationException;
 import org.kuro.exceptions.model.ErrorCode;
@@ -30,7 +29,7 @@ public class ConfigService {
     }
 
 
-    public String processConfig(String configFile, int configId) throws IOException {
+    public String processConfig(String configFile, int configId) {
         try {
             Configuration config = fileReader.readConfiguration(configFile, configId)
                     .orElseThrow(() -> new ConfigurationException(
@@ -59,8 +58,8 @@ public class ConfigService {
                 );
             }
 
-            List<List<String>> fileContents = FileProcessor.readFiles(filePaths);
-            Map<Integer, List<String>> result = FileProcessor.processFiles(fileContents, config.getAction());
+            List<List<String>> fileContents = fileReader.readFiles(filePaths);
+            Map<Integer, List<String>> result = fileReader.processFiles(fileContents, config.getAction());
 
             Map<String, Object> outputData = new LinkedHashMap<>();
             outputData.put("configFile", configFile);
